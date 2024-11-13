@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Food Center</title>
+  </head>
+  <body>
+    <header>
+      <h1>Milliy Taomlar</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Bosh sahifa</a></li>
+          <li><a href="#retsept">Retseptlar</a></li>
+          <li><a href="#footer">Biz haqimizda</a></li>
+          <li><a href="#aloqa">Aloqa</a></li>
+        </ul>
+      </nav>
+      <p><strong>Pazandachilik saytimizga xush kelibsiz</strong> Bu yerda eng sara milliy taomlar retseptlarini topasiz.</p>
+    </header>
+   <div class="main-container">
+    <main>
+      <article>
+        <h3>An'anaviy O'zbek palovi</h3>
+        <img src="./images/plov.jpg" alt="o'zbek palovi" />
+        <section id="retsept">
+          <h4>Kirish</h4>
+          <p>
+            Bu <span>ajoyib</span> palov retsepti avloddan-avlodga o'tib kelmoqda. U
+            <mark>tayyorlash oson</mark> va
+            juda mazali!
+            <!--<mark>-->
+          </p>
+        </section>
+        <section>
+          <h4>Masalliqlar</h4>
+          <table>
+            <thead>
+              <tr>
+                <th>Masalliq</th>
+                <th>Miqdori</th>
+                <th>Izoh</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Guruch</td>
+                <td>1kg</td>
+                <td>Devzira yoki Lazer</td>
+              </tr>
+              <tr>
+                <td>Go'sht</td>
+                <td>500gr</td>
+                <td>Qo'y yoki mol go'shti</td>
+              </tr>
+              <tr>
+                <td>Sabzi</td>
+                <td>500gr</td>
+                <td>Uzun qilib to'g'ralgan</td>
+              </tr>
+              <tr>
+                <td>Piyoz</td>
+                <td>3,4 dona</td>
+                <td>O'rtacha kattalikda</td>
+              </tr>
+              <tr>
+                <td>Yog'</td>
+                <td>200gr</td>
+                <td>O'simlik yoki qo'y yog'i</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section>
+          <h4>Tayyorlash tartibi</h4>
+          <ol>
+            <li>Qozonga yog' solib qizdiring</li>
+            <li>Piyozni qovuring</li>
+            <li>Go'shtni solip qovuring</li>
+            <li>Sabzini solip qovuring</li>
+            <li>Guruchni solib, suv quying</li>
+            <li>Dimlab pishiring</li>
+          </ol>
+        </section>
+
+        <section>
+          <h4>Tayyorlash uchun maslahatlar</h4>
+          <ul>
+            <li>Guruchni 2 soat ivitib qo'ying</li>
+            <li>Go'shtni yirik bo'laklarda to'g'rang</li>
+            <li>Sabzini qishloqi usulda to'g'rang</li>
+            <li>Sabzini solip qovuring</li>
+            <li>Ziravorlarni me'yorida ishlating</li>
+            <li>Dimlab pishiring</li>
+          </ul>
+        </section>
+
+
+        <section>
+          <h4>Retseptni baholang</h4>
+          <form action="">
+            <fieldset>
+              <legend>Baholash</legend>
+              <ul>
+                <li><input type="radio" name="score" id="1">1</li>
+                <li><input type="radio" name="score" id="2">2</li>
+                <li><input type="radio" name="score" id="3">3</li>
+                <li><input type="radio" name="score" id="4">4</li>
+                <li><input type="radio" name="score" id="5">5</li>
+              </ul>
+            </fieldset>
+          </form>
+        </section>
+      </article>
+    </main>
+
+    <aside>
+      <section>
+        <h4>Oshpaz haqida</h4>
+        <p>Salom men <strong>Gulnora</strong> milliy taomlar tayyorlash bo'yicha 20 yillik tajribaga ega oshpazman.</p>
+      </section>
+
+      <section id="aloqa">
+        <h4>Yangiliklardan xabardor bo'ling</h4>
+        <form action="" id="formSend">
+          <label for="ism">Ismingiz</label>
+          <input type="text" id="ism">
+          <label for="email">Email</label>
+          <input type="email" id="email">
+          
+
+          <div class="davr">
+            <p>Xabarlar davrini tanlang</p>
+              <ul>
+                <li><input type="radio" name="message" value="haftalik" >Haftalik</li>
+                <li><input type="radio" name="message" value="oylik" >Oylik</li>
+                <li><input type="checkbox" name="ok">Xabarlarni olishga roziman</li>
+                <button onclick="submitFunc()">Submit</button>
+              </ul>
+          </div>
+        </form>
+      </section>
+    </aside>
+   </div>
+
+    <footer id="footer">
+      <p>&copy; 2024 Milliy Taomlar Blogi</p>
+      <nav>
+        <h5>Bizni kuzating</h5>
+        <ul>
+          <li><a href="https://www.facebook.com/profile.php?id=61566711783611" target="_blank">Facebook</a></li>
+          <li><a href="https://t.me/savbatov_office" target="_blank">Telegram</a></li>
+          <li><a href="http://instagram.com/savbatov-office" target="_blank">Instagram</a></li>
+        </ul>
+      </nav>
+      <p>Biz bilan bog'lanish: <a href="mailto:aloqa@milliytaomlar.uz">aloqa@milliytaomlar.uz</a></p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
